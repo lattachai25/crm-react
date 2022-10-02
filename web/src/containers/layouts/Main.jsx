@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../../components/Common/Header/index";
+import Nav from "../../components/Common/Header/menu_left";
 import Menu_bar from "../../components/Common/Header/menu_ber";
 
 export default ({ children }) => {

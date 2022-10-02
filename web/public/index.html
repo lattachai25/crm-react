@@ -3,80 +3,170 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
-      name="description"
-      content="Web site created using create-react-app"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="apple-touch-icon"
+      href="%PUBLIC_URL%/app-assets/images/ico/apple-icon-120.png"
     />
-    <!-- CSS only -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="%PUBLIC_URL%/app-assets/images/ico/favicon.ico"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700"
       rel="stylesheet"
     />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
-    <link href="%PUBLIC_URL%/css/sb-admin-2.min.css" rel="stylesheet" />
+    <!-- BEGIN: Vendor CSS-->
     <link
-      href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"
       rel="stylesheet"
-      crossorigin="anonymous"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/vendors/css/vendors.min.css"
     />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>A-best POS</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/vendors/css/tables/datatable/datatables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/vendors/css/charts/apexcharts.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/vendors/css/pickers/daterange/daterangepicker.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css"
+    />
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/css/bootstrap-extended.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/css/colors.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/css/components.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/css/themes/dark-layout.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/css/themes/semi-dark-layout.css"
+    />
+    <!-- END: Theme CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/css/core/menu/menu-types/vertical-menu.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/css/plugins/forms/validation/form-validation.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/css/pages/page-users.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/vendors/css/forms/select/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/app-assets/css/core/menu/menu-types/vertical-menu.css"
+    />
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/assets/css/style.css"
+    />
+
+    <!-- END: Custom CSS-->
+    <title>Administrator :</title>
   </head>
-  <body class="sb-nav-fixed">
+  <body
+    class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns navbar-sticky footer-static"
+    data-open="click"
+    data-menu="vertical-menu-modern"
+    data-col="2-columns"
+  >
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div className="container">
-      <div id="root"></div>
-    </div>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous"
-    ></script>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="%PUBLIC_URL%/vendor/jquery/jquery.min.js"></script>
-    <script src="%PUBLIC_URL%/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <div id="root"></div>
 
-    <!-- Core plugin JavaScript-->
-    <script src="%PUBLIC_URL%/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/vendors/js/vendors.min.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
+    <!-- BEGIN Vendor JS-->
 
-    <!-- Custom scripts for all pages-->
-    <script src="%PUBLIC_URL%/js/sb-admin-2.min.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="%PUBLIC_URL%/vendor/chart.js/Chart.min.js"></script>
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="%PUBLIC_URL%/app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/vendors/js/charts/apexcharts.min.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/vendors/js/pickers/daterange/moment.min.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/vendors/js/pickers/daterange/daterangepicker.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/vendors/js/forms/repeater/jquery.repeater.min.js"></script>
+    <!-- END: Page Vendor JS-->
 
-    <!-- Page level custom scripts -->
-    <script src="%PUBLIC_URL%/js/demo/chart-area-demo.js"></script>
-    <script src="%PUBLIC_URL%/js/demo/chart-pie-demo.js"></script>
+    <!-- BEGIN: Theme JS-->
+    <script src=" %PUBLIC_URL%/app-assets/js/core/app-menu.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/js/core/app.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/js/scripts/components.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/js/scripts/footer.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="%PUBLIC_URL%/app-assets/js/scripts/forms/validation/form-validation.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/js/scripts/pages/table-extended.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/js/scripts/forms/number-input.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/js/scripts/forms/form-repeater.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/js/scripts/pages/page-users.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="%PUBLIC_URL%/app-assets/js/scripts/forms/select/form-select2.js"></script>
+    <!-- END: Page JS-->
   </body>
 </html>
