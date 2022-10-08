@@ -7,27 +7,18 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  user: "root",
-  host: "localhost",
-  password: "",
-  database: "pos_dev",
+  user: "admin_nut",
+  host: "128.199.182.220",
+  password: "028158702n",
+  database: "admin_dev",
 });
 
-app.get("/user/list", (req, res) => {
-  db.query(
-    "SELECT user.*, protion.*, status.*, branch.* FROM (((user INNER JOIN protion ON user.protion_id = protion.protion_id) INNER JOIN status ON user.status_id = status.status_id) INNER JOIN branch ON user.branch_id = branch.branch_id)",
-    (err, result) => {
-      if (err) {
-        console.log(err);
-      } else {
-        res.send(result);
-      }
-    }
-  );
+app.listen("9000", () => {
+  console.log("Server Is Running on Compass! 3001");
 });
 
-app.get("/branch/list", (req, res) => {
-  db.query("SELECT * FROM branch", (err, result) => {
+app.get("/test_user/list", (req, res) => {
+  db.query("SELECT * FROM test_user", (err, result) => {
     if (err) {
       console.log(err);
     } else {
@@ -35,9 +26,14 @@ app.get("/branch/list", (req, res) => {
     }
   });
 });
-
-app.listen("3001", () => {
-  console.log("Server Is Running on Compass! 3001");
+app.get("/areas/list", (req, res) => {
+  db.query("SELECT * FROM areas", (err, result) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.send(result);
+    }
+  });
 });
 
 app.post("/user/create", (req, res) => {
