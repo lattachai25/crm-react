@@ -48,21 +48,10 @@ function Nav() {
                     </span>
                   </a>
                   <div className="dropdown-menu dropdown-menu-right pb-0">
-                    <a
-                      className="dropdown-item"
-                      href=""
-                      onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();"
-                    >
+                    <a className="dropdown-item" href="" onclick="{Logout}">
                       <i className="bx bx-power-off mr-50" />
                       logout
                     </a>
-                    <form
-                      id="logout-form"
-                      action=""
-                      method="POST"
-                      style={{ display: "none" }}
-                    ></form>
                   </div>
                 </li>
               </ul>

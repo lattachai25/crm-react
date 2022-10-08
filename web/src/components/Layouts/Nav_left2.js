@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-function Nav_left() {
+function Nav_left2() {
   return (
     <nav>
       <div
@@ -44,7 +44,7 @@ function Nav_left() {
                   </a>
                   <ul className="menu-content">
                     <li>
-                      <Link to="/Dept">
+                      <Link to="/About">
                         <i className="bx bx-right-arrow-alt" />
                         <span className="menu-item" data-i18n="DEPT (DEPT)">
                           DEPT (DEPT)
@@ -52,7 +52,7 @@ function Nav_left() {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/Zone">
+                      <Link to="/Product">
                         <i className="bx bx-right-arrow-alt" />
                         <span className="menu-item" data-i18n="DEPT (DEPT)">
                           ZONE
@@ -1097,4 +1097,4 @@ function Nav_left() {
   );
 }
 
-export default Nav_left;
+export default Nav_left2;
