@@ -47,7 +47,7 @@ export default () => {
               <Main>
                 <Switch>
                   {/* ----------------------------------- Admin -------------------------------------------- */}
-                  <Route path="/main" exact component={Register} />
+                  <Route path="/" exact component={Main} />
                   <Route path="/Dept" component={Dept} />
                   <Route path="/Zone" component={Zone} />
                   {/* ----------------------------------- Sourcing -------------------------------------------- */}
